@@ -6,10 +6,10 @@
   border-bottom: 1px solid #ccc;
   padding: 10px 0;}
 
-.news-section .top-news h3 {
+.news-section .top-news p {
   color: #003153;}
 
-.news-section .news-item h3 {
+.news-section .news-item p {
   font-size: 14px;
   margin: 0;
   margin-bottom: 4px;}
