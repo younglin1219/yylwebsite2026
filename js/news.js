@@ -34,10 +34,10 @@ function renderNews() {
     const div = document.createElement("div");
     div.className = "news-item" + (news.top ? " top-news" : "");
     div.innerHTML = `
-      <h3>
+      <p>
         ${news.title}
         ${news.url ? `<a href="${news.url}" target="_blank">[連結]</a>` : ""}
-      </h3>
+      </p>
       <p>${news.date}</p>
     `;
     newsList.appendChild(div);
