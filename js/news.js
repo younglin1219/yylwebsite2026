@@ -1,4 +1,6 @@
 const newsData = [
+  { title: "<i class='fa-solid fa-thumbtack'></i> 舊網站原服務平台 Weebly 終止台灣區服務，網頁內容陸續移動至此網站", date: "2026-07-04", top: true },
+  { title: "擔任台灣河溪網協會第一屆「台灣河川希望工程獎」及「年度河川失望工程名單」公民評審", date: "2025-01-24", top: false, url: "http://younglinurbanology.weebly.com/blog-2599131456/1041485" },
   { title: "於臺南家具產業博物館魯班學堂完成榫卯木工課程三期結業", date: "2026-05-31", top: false },
   { title: "論文「應用時間地理學觀點分析非接駁型公共自行車旅次行為與租賃站時空樣態：以台南市為例」成果於國立臺灣師範大學第 30 屆地理國際學術研討會完成發表", date: "2026-04-19", top: false },
   { title: "<i class='fa-solid fa-thumbtack'></i> 團隊成果「臺南車站站體周邊再發展計畫」參與第二十屆全國規劃系所實習聯展榮獲特優獎", date: "2025-05-19", top: true, url: "https://www.facebook.com/TaiwanInstituteofUrbanPlanning/posts/pfbid02yAD56obmdi1tU8mQKUtraGVdqvtLqBFhVLsLWmZRBqCdJeDUS4CpVCgTt8ybdhGPl" },
