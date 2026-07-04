@@ -1,0 +1,35 @@
+
+.news-section {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.news-section .news-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.news-section .top-news h3 {
+  color: #003153;
+}
+
+.news-section .news-item h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.news-section .news-item p {
+  margin: 0;
+  font-size: 9px !important; /* 縮小日期字體 */
+  color: #777;
+}
+
+.news-section .pagination {
+  margin-top: 15px;
+}
+
+.news-section .pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
