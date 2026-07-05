@@ -9,11 +9,11 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* 確保頁尾能推到最下方 */
+  min-height: 100vh;
 }
 
 main {
-  flex: 1; /* 填滿剩餘空間 */
+  flex: 1;
   padding: 20px;
 }
 
