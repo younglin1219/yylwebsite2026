@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.text();
     })
     .then(data => {
-      document.getElementById('navbar-container').innerHTML = data;
+      document.getElementById('navbar-wrapper').innerHTML = data;
     })
     .catch(error => console.error('載入導覽列失敗:', error));
 
