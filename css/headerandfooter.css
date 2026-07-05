@@ -18,32 +18,91 @@ main {
 }
 
 /* 導覽列樣式 */
-.main-navbar {
+.navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 15px 30px;
-  color: white;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 100;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.5px;
 }
 
-.nav-links li {
-  margin-left: 20px;
+.nav-menu {
+  display: flex; 
+  list-style: none; 
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
-  color: white;
+.nav-menu > li {
+  position: relative;
+  margin-left: 30px;
+  padding: 10px 0;
+}
+
+.nav-menu > li > a {
+  color: #333333;
   text-decoration: none;
-  transition: color 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #ffdd57;
+.nav-menu > li > a i {
+  font-size: 12px;
+  margin-left: 4px;
+  color: #888888;
+}
+
+.nav-menu > li:hover > a {
+  color: #007bff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  list-style: none;
+  padding: 8px 0;
+  margin-top: 5px;
+}
+
+.nav-menu .has-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #555555;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+  color: #007bff;
 }
 
 /* 頁尾樣式 */
