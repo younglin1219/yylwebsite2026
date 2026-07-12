@@ -4,15 +4,15 @@
   background-color: #ffffff;
 }
 
-.section:nth-child(even) {
+.section:nth-of-type(even) {
   background-color: #f8f9fa;
 }
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 40px;
 }
 
 .container h2 {
