@@ -1,5 +1,5 @@
 const newsData = [
-  { title: "<i class='fa-solid fa-thumbtack'></i> 因應原 Weebly 平台終止台灣區服務，後續由本網站提供服務", date: "2026-07-05", top: true },
+  { title: "<i class='fa-solid fa-thumbtack'></i> 因應原 Weebly 平台終止台灣區服務，後續由本網站提供服務，網站內容陸續建置中", date: "2026-07-05", top: true },
   { title: "於臺南家具產業博物館魯班學堂完成榫卯木工課程三期結業", date: "2026-05-31", top: false },
   { title: "論文「應用時間地理學觀點分析非接駁型公共自行車旅次行為與租賃站時空樣態：以台南市為例」成果於國立臺灣師範大學第 30 屆地理國際學術研討會完成發表", date: "2026-04-19", top: false },
   { title: "<i class='fa-solid fa-thumbtack'></i> 團隊成果「臺南車站站體周邊再發展計畫」參與第二十屆全國規劃系所實習聯展榮獲特優獎", date: "2025-05-19", top: true, url: "https://www.facebook.com/TaiwanInstituteofUrbanPlanning/posts/pfbid02yAD56obmdi1tU8mQKUtraGVdqvtLqBFhVLsLWmZRBqCdJeDUS4CpVCgTt8ybdhGPl" },
