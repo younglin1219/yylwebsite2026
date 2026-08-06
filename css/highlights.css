@@ -1,0 +1,164 @@
+.news-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.news-section h4 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.articles-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}
+
+.articles-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.articles-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button.left {
+    left: -20px;
+}
+
+.nav-button.right {
+    right: -20px;
+}
+
+.article-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+    width: 250px;
+    height: 450px;
+    flex: 0 0 auto;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.article-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-date {
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.article-title {
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.article-description {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.article-tags {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+/* 分類標籤顏色控制 */
+.tag.category-1 { background-color: #e6f7ff; color: #0050b3; } /* 專題成果 */
+.tag.category-2 { background-color: #e2f4ea; color: #2b8e5c; } /* 研討會 */
+.tag.category-3 { background-color: #fffbe6; color: #ad7c00; } /* 專題實習 */
+.tag.category-4 { background-color: #fce7e7; color: #bf242a; } /* 紅色強調 */
+.tag.category-5 { background-color: #f0e6ff; color: #5c16c4; } /* 文章分享 */
+.tag.category-6 { background-color: #e0eefd; color: #216d9e; }
+.tag.category-7 { background-color: #f7f7f7; color: #5c5c5c; }
+.tag.category-8 { background-color: #ffe6f3; color: #a3106e; }
+.tag.category-9 { background-color: #fff0db; color: #d46b08; } /* 生活紀錄 */
+
+.view-project-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+.view-project-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-button {
+        display: none;
+    }
+}
