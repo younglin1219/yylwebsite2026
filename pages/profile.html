@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ying-Yang's CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: sans-serif;}
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { text-decoration: none; color: #555; font-weight: 500; }
+        nav a:hover { color: #007bff; }
+
+        .grid-main {
+            display: grid;
+            max-width: 1000px;
+            margin: 40px auto;
+            gap: 20px;
+            padding: 0 20px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+                "box-left box-right"
+                "box-bottom box-bottom";
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        .box-a { grid-area: box-left; text-align: center;}
+        .box-b { grid-area: box-right; text-align: left;}
+      box-b {
+    text-align: left;
+}
+        .box-b p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+       .box-b i{
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+}
+       .box-c { grid-area: box-bottom; min-height: 200px; text-align: center;}
+        @media (max-width: 768px) {
+            .grid-main {
+                grid-template-areas: 
+                    "box-left"
+                    "box-right"
+                    "box-bottom";
+                grid-template-columns: 1fr;
+            }
+        }
+      .custom-accordion {
+    max-width: 100%;
+    font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+  }
+      
+  .custom-accordion details {
+    background-color: #f5f5f5; 
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease;
+  }
+
+  .custom-accordion summary {
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    user-select: none;
+  }
+
+  .custom-accordion summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .custom-accordion summary::after {
+    content: '\002B';
+    font-size: 20px;
+    color: #bbb;
+    font-weight: lighter;
+  }
+
+  .custom-accordion details[open] {
+    background-color: #ffffff;
+  }
+
+  .custom-accordion details[open] summary {
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .custom-accordion details[open] summary::after {
+    content: '\2212';
+    color: #999;
+  }
+
+  .custom-accordion .inner-content {
+    padding: 20px 25px;
+    line-height: 1.8;
+    color: #444;
+    background-color: #fff;
+  }
+  .inner-content li{
+    text-align: left;
+}
+
+  .custom-accordion ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+  }
+
+  .custom-accordion li {
+    margin-bottom: 10px;
+  }
+    </style>
+</head>
+<body>
+
+    <main class="grid-main">
+        <div class="card box-a">
+            <img src="https://i.meee.com.tw/3jH0huT.jpg"  width="150">
+          <p><b>林盈漾 Ying-Yang Lin</b></p>
+            <p>碩士生</p>
+        </div>
+        
+        <div class="card box-b">
+        <p><i class="fa-solid fa-briefcase"></i> 碩士生</p>
+         <p><i class="fas fa-map-marker-alt"></i> 臺灣臺南</p>
+        <p style=“word-break: break-all;” ><i class="fas fa-envelope"></i> <a href="mailto:p26134040@gs.ncku.edu.tw">p26134040@gs.ncku.edu.tw</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ying-yang-lin-0a8b1622b?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BbU194WsGRKaJ0GuKZmb%2BYw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile">Ying-Yang Lin</a></p>
+         <p><i class="fas fa-file-alt"></i> <a href="https://drive.google.com/file/d/1Yh30ogz6x3_QxPoARYec2P3NRQIBCBj9/view?usp=sharing" target="_blank">簡歷表下載 (2025.07.) </a></p>
+        <p><i class="fab fa-medium"></i> <a href="#">Medium (TBL)</a></p>
+        </div>
+
+        <div class="card box-c">
+            <h3 style="text-align:left;">教育背景</h3>
+              <div class="custom-accordion">
+                <details>
+                  <summary>學歷</summary>
+                  <div class="inner-content">
+                    <li>國立成功大學都市計劃學系工學碩士 (M.Sc.) (2026.08.)</li>
+                    <li>國立成功大學交通管理科學系管理學學士 (B.B.A.) (2024.06.)</li>
+                    <li>國立成功大學都市計劃學系工學學士 (B.Sc.) (2024.06.)</li>
+                  </div>
+                </details>
+                <details>
+                  <summary>其他專業訓練</summary>
+                  <div class="inner-content">
+                    <li>臺南家具產業博物館魯班學堂榫卯木工正規班三期結業 (2026.05.)</li>
+                    <li>國立成功大學跨領域永續發展全英語學分學程 (2024.02.)</li>
+                    <li>國立成功大學防災科技管理學分學程 (2023.07.)</li>
+                  </div>
+                </details>
+              </div>
+          
+          <h3 style="text-align:left;">經歷</h3>
+              <div class="custom-accordion">
+                <details>
+                  <summary>主要經歷</summary>
+                  <div class="inner-content">
+                    <li>國立成功大學都市計劃學系，兼任助理 (2022.08~2026.03.)</li>
+                    <li>衍古開發顧問有限公司，實習生 (2021.07.~2021.08.)</li>
+                  </div>
+                </details>
+                <details>
+                  <summary>其他經歷</summary>
+                  <div class="inner-content">
+                    <li>社團法人台灣河溪網協會金爛蘋果 2.0 台灣「河川希望工程獎」及「年度河川失望工程名單」，公民評審 (2024)。</li>
+                    <li>國立成功大學都市計劃學系「第三週期系所自我評鑑」，學生代表兼行政助理 (2024.09.~2026.03.)。</li>
+                    <li>國立成功大學都市計劃學系「系網小組」，網站管理助理 (2024.09.~2025.08.)。</li>
+                    <li>臺南市政府教育局「青年倡議工作坊」，協作助教 (2023, 2024)。</li>
+                    <li>國立成功大學都市計劃學系「112 級畢業成果展：城間新紋」，策展 (2023)。</li>
+                    <li>國立成功大學都市計劃學系「第十二屆都計營」，場器組工作人員 (2020)。</li>
+                    <li>新北市立永平高級中學「交通服務隊」，隊員兼第三中隊主哨 (2016.09.~2017.10.)。​</li>
+                  </div>
+                </details>
+              </div>
+          
+          <h3 style="text-align:left;">專業技能</h3>
+              <div class="custom-accordion">
+                <details>
+                  <summary>軟體應用</summary>
+                  <div class="inner-content">
+                    <li>統計軟體：R, JASP</li>
+                    <li>地理資訊系統：ArcGIS, QGIS, GeoDa, R</li>
+                    <li>網頁前端工程：HTML/CSS/JS</li>
+                  </div>
+                </details>
+                
+                <details>
+                  <summary>語言能力</summary>
+                  <div class="inner-content">
+                    <li>中文 (CEFR: C2)</li>
+                    <li>英文 (CEFR: B2)； TOOEIC: 785 points (2024.04.)</li>
+                    <li>日文 (CEFR: B1)</li>
+                    <li>臺語 (CEFR: A2)</li>
+                    <li>客語 (CEFR: A1)</li>
+                  </div>
+                </details>
+                
+                <details>
+                  <summary>專業證照</summary>
+                  <div class="inner-content">
+                    <p style="text-align: left">急救訓練</p>
+                    <li>基本救命術合格 (Basic Life Support, BLS)，國立成功大學醫學院附設醫院。 (2025.11.26.~2027.11.26.)</li>
+                    <li>基本創傷救命術合格 (Basic Traumatic Life Support, BTLS)，中華天使之翼救護訓練協會。 (2025.09.13.~2027.09.13.)</li>
+                  </div>
+                </details>
+              </div>
+          
+          <h3 style="text-align:left;">興趣領域</h3>
+              <div class="custom-accordion">
+                <details>
+                  <summary>研究領域</summary>
+                  <div class="inner-content"> 
+                    <p style="text-align: left">都市規劃理論、基盤設施地理學、時間地理學、都市運輸系統</p>
+                  </div>
+                </details>
+                
+                <details>
+                  <summary>研究議題</summary>
+                  <div class="inner-content">
+                                      <li>都市基盤設施與運輸系統規劃與轉型</li>
+                  <li>時間地理學於運輸移動之應用</li>
+                  </div>
+                </details>
+                
+                <details>
+                  <summary>其他關注</summary>
+                  <div class="inner-content">
+                    <li>家具木工設計與製作</li>
+                    <li>認知心理學與人格心理學</li>
+                    <li>日本文化史</li>
+                    <li>溪流生態與治理</li>
+                  </div>
+                </details>
+              </div>
+          
+          <h3 style="text-align:left;">榮譽及獎勵</h3>
+              <div class="custom-accordion">
+                <details>
+                  <summary>獲獎</summary>
+                  <div class="inner-content">
+                    <li>臺南車站站體周邊再發展計畫，中華民國都市計畫技師公會全國聯合會（主辦）第 20 屆全國規劃系所實習聯展：特優獎 (2025)。（團隊成員：王玟涵、申翊萱*、沈妙靜、林盈漾、卓子芸、卓敬庭、陳柏睿、黃嬿容，指導老師：閻永祺助理教授；按姓名筆畫順序排列）</li>
+                    <li>阿里山假日尖峰時段停車轉乘與公共運輸接駁策略，交通部公路總局公路公共運輸競賽：入選 (2022)。（團隊成員：李浩禎*、林盈漾，指導老師：李子璋副教授；按姓名筆畫順序排列）</li>
+                   <li>科技部大專學生參與專題研究計畫補助 (2022)（指導老師：鄭皓騰助理教授）。</li>
+                   <li>台北捷運路網規劃之變遷，全國高級中等學校小論文寫作競賽：史地類甲等獎 (2017)。（指導老師：黃奕泉老師）</li>
+                  </div>
+                </details>
+              </div>
+          
+          <h3 style="text-align:left;">著作目錄</h3>
+              <div class="custom-accordion">
+                <details>
+                  <summary>研討會論文</summary>
+                  <div class="inner-content">
+                    <li><b>林盈漾*</b>、鄭皓騰 (2026.04.19.)。應用時間地理學觀點分析非接駁型態公共自行車旅次行為與租賃站時空樣態—以臺南舊市區為例。第 30 屆臺灣地理國際學術研討會。臺灣臺北：國立臺灣師範大學地理學系。</li>
+                    <li><b>林盈漾*</b>、鄭皓騰 (2023.05.14.)。以計時都市主義檢視我國新興都市規劃生活圈之探討—以淡海新市鎮特定區計畫為例。第 27 屆臺灣地理國際學術研討會。臺灣臺北：國立臺灣師範大學地理學系。</li>
+                  </div>
+                </details>
+                
+                <details>
+                  <summary>研究計畫</summary>
+                  <div class="inner-content">
+                    <li>初探公共自行車非接駁型時空行為類型—以臺南市為例（題目暫定）。國立成功大學碩士論文研究計畫，計畫主持人。(2025.09.~迄今)（指導老師：鄭皓騰副教授）</li>
+                    <li>以計時都市主義檢視都市步行空間－以淡海新市鎮特定區計畫為例。科技部大專學生專題研究計畫補助 (111-2813-C-006-051-H)，計畫主持人。(2022.07.~2023.02.)（指導老師：鄭皓騰助理教授）</li>
+                  </div>
+                </details>
+                
+                <details>
+                  <summary>展覽</summary>
+                  <div class="inner-content">
+                    <li>新世代城鄉 Living Lab｜臺南車站站體周邊再發展計畫。第 20 屆全國規劃系所實習聯展，臺灣臺中（參展）。(2025.05.15.)</li>
+                    <li>城間新紋｜臺中市中區仁愛柳川段社會住宅開發計畫案。國立成功大學都市計劃學系 112 級畢業成果展，臺灣臺南（參展兼策展）。(2023.06.06.~2023.06.11.)。</li>
+                  </div>
+                </details>
+                
+                <details>
+                  <summary>其他著作</summary>
+                  <div class="inner-content">
+                    <li>李浩禎*、林盈漾、李子璋 (2022)。阿里山假日尖峰時段停車轉乘與公共運輸接駁策略。​交通部公路總局公路公共運輸競賽。（入選）</li>
+                    <li>林盈漾* (2022)。捷運轉乘與都市空間佈局。UPDATE16，系刊專欄，國立成功大學都市計劃學系系學會。</li>
+                    <li>林盈漾*、黃奕泉 (2017.11)。臺北捷運路網的變遷。全國高級中等學校小論文寫作競賽。（史地類甲等獎）</li>
+                  </div>
+                </details>
+              </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
