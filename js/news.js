@@ -1,5 +1,5 @@
 const newsData = [
-  { title: "<i class='fa-solid fa-thumbtack'></i>「木工習作：小杌、明式芳香几」於台江文化中心參與魯班學堂暨永興家具師生聯展「作木工・用生活」", date: "2026-08-22", top: true, url: "https://tkcc.tnc.gov.tw/ActivityInfoDetailC002100.aspx?Cond=c69d3d24-0a7b-4bd7-aeda-d616a8bd3711"  },
+  { title: "<i class='fa-solid fa-thumbtack'></i>「木工習作：小杌、明式芳香几」於台江文化中心參與魯班學堂師生暨永興家具聯展「作木工・用生活」", date: "2026-08-22", top: true, url: "https://tkcc.tnc.gov.tw/ActivityInfoDetailC002100.aspx?Cond=c69d3d24-0a7b-4bd7-aeda-d616a8bd3711"  },
   { title: "<i class='fa-solid fa-thumbtack'></i> 因應原 Weebly 平台終止台灣區服務，後續由本網站提供服務，網站內容陸續建置中", date: "2026-07-05", top: true },
   { title: "於臺南家具產業博物館魯班學堂完成榫卯木工課程三期結業", date: "2026-05-31", top: false },
   { title: "論文「應用時間地理學觀點分析非接駁型公共自行車旅次行為與租賃站時空樣態：以台南市為例」成果於國立臺灣師範大學第 30 屆地理國際學術研討會完成發表", date: "2026-04-19", top: false },
